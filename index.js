@@ -21,7 +21,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ['./app.js'],
+  apis: ['./index.js'],
 };
 /*   swaggerDefinition: {
     openapi: '3.0.0',
