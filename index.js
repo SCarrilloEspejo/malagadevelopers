@@ -2,7 +2,7 @@ const express = require('express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const emailService = require('./emailService');
-
+var serverPort = process.env.PORT || 5001;
 const app = express();
 app.use(express.json());
 
@@ -85,6 +85,6 @@ app.post('/send-email', async (req, res) => {
 
 // Inicia el servidor
 const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
+app.listen(serverPort, () => {
+  console.log(`Servidor ejecutándose en http://localhost:${serverPort}`);
 });
