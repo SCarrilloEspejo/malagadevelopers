@@ -77,7 +77,7 @@ app.post('/send-email', async (req, res) => {
 
   try {
     const response = await emailService.sendMail({ to, subject, message });
-    res.status(200).json({ message: 'Correo enviado con éxito', details: response.body });
+    res.status(200).json({ message: 'Correo enviado con éxito' });
   } catch (error) {
     res.status(500).json({ error: 'Error al enviar el correo', details: error.message });
   }
