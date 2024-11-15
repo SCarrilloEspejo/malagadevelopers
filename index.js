@@ -17,7 +17,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'malagadevelopers-ded6f7bcgvggd5dd.canadacentral-01.azurewebsites.net',
+        url: 'https://malagadevelopers-ded6f7bcgvggd5dd.canadacentral-01.azurewebsites.net/',
       },
     ],
   },
